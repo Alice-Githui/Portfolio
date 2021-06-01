@@ -40,3 +40,24 @@
     text-align: center;
     padding-top: 50px;
 }
+
+#academic{
+    text-align: center;
+}
+#experience{
+    margin-left: 100px;
+    margin-right: 100px;
+}
+#experience h4{
+    text-align: center;
+}
+
+.experience-images img{
+    object-fit: cover;
+}
+
+.image-card a img{
+    height: 250px;
+    width: 100%;
+    margin-top: 20px;
+}
