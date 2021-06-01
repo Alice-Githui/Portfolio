@@ -7,6 +7,11 @@
     font-family: 'Zilla Slab', serif;
 }
 
+#navbar{
+    background-color: #000000;
+    color: white;
+}
+
 #name{
     background-image: url(../Images/project-images/landingpagebackground.jpeg);
     background-position: center;
