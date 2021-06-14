@@ -57,25 +57,51 @@
     text-align: center;
 }
 
-.project-photos{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 1em;
-    margin: 0 1em;
+.image-card{
+    margin-bottom: 20px;
+    position: relative;
 }
 
-.project-photos img{
+.image-card img{
     width: 100%;
     height: 250px;
-    transition: 0.3sec all ease;
     cursor: pointer;
 }
 
-.project-photos img:hover{
-    opacity: 0.8;
-    transform: scale(0.95);
+.portfolio-name{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 95%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+    opacity:0;
+    transition: opacity 0.25s;
+
 }
 
+.portfolio-name > *{
+    transform: translateY(20px);
+    transition: transform 0.25s;
+}
+
+.portfolio-name:hover{
+    opacity: 1;
+}
+
+.portfolio-name:hover >*{
+    transform: translateY(0);
+}
+
+.portfolio-name a{
+    color: white;
+}
 
 
 .modal{
@@ -100,11 +126,6 @@
     display: block;
 }
 
-.modalTxt{
-    margin: 10px;    
-}
-
-
 /* close button */
 .close {
     position: absolute;
@@ -120,16 +141,32 @@
 .close:hover{
     cursor:pointer;
 }
+.p-view{
+    position: absolute;
+    top: 100px;
+    right: 780px;
+    color: #f1f1f1;
+    font-size: 30px;
+    font-weight: bold;
+    transition: 0.3
 
-.modal.appear{
-    opacity: 1;
-    pointer-events: all;
 }
-.modal.appear .modalImg{
-    animation: zoom 0.3s linear;  
+
+.viewproject{
+    position: absolute;
+    top: 260px;
+    right: 630px;
+    font-size: 80px;
+    font-weight: bold;
+    transition: 0.3s;
+    cursor: pointer;
+    color: cyan;
+    
 }
-.modal.appear .modalTxt{
-    animation: zoom 0.3s linear;
+
+.viewproject:hover{
+    transform: scale(1.5);
+
 }
 
 @keyframes zoom{
