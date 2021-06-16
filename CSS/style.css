@@ -82,11 +82,21 @@
     margin-left: 50px;
 }
 #experience{
-    margin-left: 150px;
-    margin-right: 150px;
+    margin-left: 120px;
+    margin-right: 120px;
 }
 #experience h4{
     text-align: center;
+}
+
+#skillset{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.skills{
+    background: linear-gradient(to bottom, #66ccff 0%, #66ffff 100%);
 }
 
 .image-card{
@@ -106,7 +116,7 @@
     left: 0;
     width: 95%;
     height: 100%;
-    background: rgba(0,0,0,0.6);
+    background: rgba(0,0,0,0.9);
     color: #ffffff;
     display: flex;
     flex-direction: column;
