@@ -201,7 +201,7 @@
         <div id="footer">
             <footer>
                 <div class="row">
-                    <h4 class="text-center">CONTACT ME</h4>
+                    <h4 class="text-center" style="margin-top: 20px;">CONTACT ME</h4>
                     <div class="col-md-2"></div>
                     <div class="col-md-4">
                         <div id="contact">
@@ -217,10 +217,12 @@
                     <div class="col-md-1"></div>   
                     <div class="col-md-4 form-group">
                         <p>Send Me a Message:</p>
-                        <form id="emailform">
-                            <input type="text" class="form-control" id="emailmessage" placeholder="Name">
+                        <form id="emailform" action="https://formsubmit.co/gnyokabi.alice@gmail.com" method="POST">
+                            <input type="text" class="form-control" id="emailmessage" name="emailname"placeholder="Name" required>
                             <br>
-                            <textarea type="text" class="form-control" placeholder="Message"></textarea>
+                            <input type="email" class="form-control" id="email-email" name="emailemail"placeholder="Your email address" required>
+                            <br>
+                            <textarea type="text" class="form-control" placeholder="Message" name="textarea" required></textarea>
                             <br>
                             <button type="button" class="btn btn-info btn-block">Send</button>
                             <br>
